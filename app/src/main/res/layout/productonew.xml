@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/txt_producto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/material_blue_500"
+        android:hint="producto"
+        android:maxLength="100"
+        android:background="@drawable/edit_text"
+        android:singleLine="true" >
+        <requestFocus/>
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/txt_observaciones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="observaciones"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/material_blue_500"
+        android:singleLine="false" >
+
+    </EditText>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0eaef"
+    android:orientation="vertical">
+
+
+    <ProgressBar
+        android:id="@+id/myProgressB"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lytbusqueda"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/busqueda"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgButtonBuscar"
+            android:onClick="buscarUsers"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextBusqueda"
+            android:hint="@string/patronbusqueda"
+            android:layout_toLeftOf="@+id/imgButtonBuscar"/>
+
+
+
+    </RelativeLayout>
+
+
+    <ListView
+            android:id="@+id/listBusqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:headerDividersEnabled="true"
+            android:padding="10dp"
+
+        android:layout_below="@+id/lytbusqueda"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

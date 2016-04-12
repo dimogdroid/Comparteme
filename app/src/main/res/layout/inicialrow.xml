@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/card_no_border"
+    android:orientation="vertical"
+    android:id="@+id/rltlayout"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <TextView
+        android:id="@+id/txtidlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:id="@+id/txtuser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#75b2db"
+            android:textAllCaps="true"
+
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout2">
+
+
+
+        <ImageView
+            android:id="@+id/imgIconG"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="5dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="deleteList"
+            android:background="@drawable/ic_action_action_delete"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageButtonDel"
+            android:layout_marginRight="6dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/lytNombreyFecha"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation ="vertical"
+            android:weightSum="2"
+            android:background="?android:attr/selectableItemBackground"
+
+            android:layout_toRightOf="@+id/imageButtonDel"
+            android:layout_toLeftOf="@+id/imgIconG"
+
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <LinearLayout
+                android:id="@+id/lytNombre"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight = "1.4">
+                <TextView
+                    android:id="@+id/txtNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:textColor="#333527"
+                    android:textSize="25dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytfechas"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight = "0.6">
+
+                <TextView
+                    android:id="@+id/txtFechaCreacion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="#c8d1d9"
+                    android:textSize="7dp"
+                    android:gravity="center"
+                    android:textStyle="italic|bold"/>
+                <TextView
+                    android:id="@+id/txtFechaMod"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2184e0"
+                    android:textSize="8dp"
+                    android:gravity="center"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+
+         </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

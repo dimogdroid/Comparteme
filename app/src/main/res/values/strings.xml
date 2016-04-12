@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Comparteme</string>
+    <string name="app_subtitle">Diego</string>
+
+    <string name="nombre">Nombre Nueva Lista</string>
+    <string name="nombreuser">Nombre Usuario</string>
+    <string name="nuevopro">Nuevo Producto</string>
+    <string name="editpro">Editar Producto</string>
+    <string name="comenzar">Crear</string>
+    <string name="comenzarmas">Más</string>
+    <string name="modificar">Modificar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eligeuno">Élige un Icono</string>
+    <string name="mercadona">Mercadona</string>
+    <string name="carrefour">Carrefour</string>
+    <string name="supercor">Supercor</string>
+    <string name="guardar">Guardar</string>
+    <string name="frase">Frase identificativa</string>
+    <string name="unir">Unir</string>
+    <string name="anular"> Anular </string>
+    <string name="realizado">Realizado</string>
+    <string name="patronbusqueda">Introduce un patrón de búsqueda</string>
+    <string name="lista">Lista</string>
+    <string name="fruta">Fruta</string>
+    <string name="carne">Carne</string>editpro
+    <string name="verdura">Verdura</string>
+    <string name="pescado">Pescado</string>
+    <string name="farmacia">Farmacia</string>
+    <string name="drogueria">Droguería</string>editpro
+
+</resources>

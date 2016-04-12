@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme.Light.TranslucentKitKatStatusBar">
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#0099cc</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+</resources>

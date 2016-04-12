@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/card"
+    android:orientation="horizontal"
+    android:id="@+id/rltlayoutBusqueda">
+
+    <TextView
+        android:id="@+id/txtiddevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="anular"
+        android:text="@string/anular"
+        android:id="@+id/btnanular"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="7dp"
+        android:textColor="#FFFFFF"
+        android:background="#75b2db"
+        android:layout_alignParentRight="true"/>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="unir"
+        android:text="@string/unir"
+        android:id="@+id/btnunir"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="7dp"
+        android:textColor="#FFFFFF"
+        android:background="#75b2db"
+        android:layout_toLeftOf="@+id/btnanular"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lytUsers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/btnunir"
+        android:layout_toStartOf="@+id/btnunir">
+
+
+
+        <TextView
+            android:id="@+id/txtUserBusqueda"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="#417c3e"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtfraseBusqueda"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#2184e0"
+            android:textSize="10dp"
+
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

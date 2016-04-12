@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/card"
+    android:orientation="horizontal"
+    android:id="@+id/rltlayout"
+
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#0DA9F4"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deleteProd"
+        android:background="@drawable/ic_action_action_delete"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/imgDelProducto"
+        android:layout_marginRight="1dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_edit"
+        android:id="@+id/imgEditProducto"
+        android:layout_alignTop="@+id/lytProductos"
+        android:layout_toRightOf="@+id/imgDelProducto"
+        android:layout_toEndOf="@+id/imgDelProducto" />
+
+
+
+    <ImageView
+        android:id="@+id/imgdblcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_action_done_all"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/lytProductos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imgEditProducto"
+        android:layout_toEndOf="@+id/imgEditProducto">
+
+        <TextView
+            android:id="@+id/txtidprod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+
+        <TextView
+                android:id="@+id/txtConcepto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textColor="#417c3e"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/txtObservaciones"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#2184e0"
+            android:textSize="10dp"
+
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

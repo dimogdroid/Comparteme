@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10sp" 
+    android:background="#FFFFFF">
+
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombreuser"
+        android:textColor="@color/material_blue_500"
+       android:maxLength="20"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txt_frase"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/material_blue_500"
+        android:hint="@string/frase"
+        android:maxLength="200"
+        android:singleLine="true" >
+
+    </EditText>
+
+ 
+
+</LinearLayout>
